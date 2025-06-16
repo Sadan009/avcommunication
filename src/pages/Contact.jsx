@@ -34,7 +34,13 @@ const Contact = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, mobile, email, message }),
+        body: JSON.stringify({
+          name,
+          mobile,
+          email,
+          message,
+          timestamp: new Date().toISOString(),
+        }),
       }
     );
     if (res) {

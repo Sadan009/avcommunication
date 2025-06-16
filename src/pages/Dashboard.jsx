@@ -29,6 +29,7 @@ const Dashboard = () => {
 
     return () => unsubscribe();
   }, [navigate]);
+  console.log(data);
 
   return (
     <div className="min-h-screen bg-gray-100 px-4 py-8">
@@ -42,19 +43,27 @@ const Dashboard = () => {
           <table className="min-w-full table-auto text-sm">
             <thead className="bg-blue-500 text-white">
               <tr>
+                <th className="px-4 py-3 text-left">Id</th>
                 <th className="px-4 py-3 text-left">Name</th>
                 <th className="px-4 py-3 text-left">Email</th>
                 <th className="px-4 py-3 text-left">Mobile</th>
                 <th className="px-4 py-3 text-left">Message</th>
+                <th className="px-4 py-3 text-left">Date/Time</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
-              {data.map((entry) => (
+              {data.map((entry, id) => (
                 <tr key={entry.id}>
+                  <td className="px-4 py-2">{id + 1}</td>
                   <td className="px-4 py-2">{entry.name}</td>
                   <td className="px-4 py-2">{entry.email}</td>
                   <td className="px-4 py-2">{entry.mobile}</td>
                   <td className="px-4 py-2">{entry.message}</td>
+                  <td className="px-4 py-2">
+                    {entry.timestamp
+                      ? new Date(entry.timestamp).toLocaleString("en-IN")
+                      : "N/A"}
+                  </td>
                 </tr>
               ))}
               {data.length === 0 && (

@@ -8,7 +8,7 @@ const ServicesBanner = ({ title = "Services" }) => {
     <div
       className="relative w-full h-64 md:h-80 bg-center bg-cover flex items-center justify-center"
       style={{
-        backgroundImage: `url("/assets/about-banner.png)`,
+        backgroundImage: `url("/assets/about-banner.png")`,
       }}
     >
       {/* Dark overlay */}
