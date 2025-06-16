@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ContactBanner from "../components/sections/banner-section/contact-banner";
 import {
   CheckCircle,
@@ -9,6 +9,8 @@ import {
   Send,
   User,
 } from "lucide-react";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   // Form for contact
@@ -27,10 +29,12 @@ const Contact = () => {
     e.preventDefault();
     const { name, mobile, email, message } = form;
 
-    const res = await fetch(
-      "https://avcommunication-abd1c-default-rtdb.firebaseio.com/userDataRecords.json",
-      {
-        method: "POST",
+    if(name.trim() !== "" && mobile.trim() !== "" && email.trim() !== "" || message.trim() !== "") {
+
+      const res = await fetch(
+        "https://avcommunication-abd1c-default-rtdb.firebaseio.com/userDataRecords.json",
+        {
+          method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
@@ -44,14 +48,38 @@ const Contact = () => {
       }
     );
     if (res) {
-      alert("Message sent successfully!");
+      toast.success("Message Sent Successfully!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       setForm({ name: "", mobile: "", email: "", message: "" });
+      return;
     } else {
       alert("Failed to send message. Please try again later.");
+      }
+    }else{
+      toast.error("Please fill all the fields before submitting.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
     }
     // Add submission logic here (e.g., Firebase, email API, DB)
-    alert("Message sent successfully!");
+    
     setForm({ name: "", mobile: "", email: "", message: "" });
+
   };
 
   const contactInfo = [
@@ -280,6 +308,19 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </>
   );
 };
