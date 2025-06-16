@@ -91,7 +91,7 @@ const WhoWeAre = () => {
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="./src/assets/hero-banner.png"
+                  src="/assets/hero-banner.png"
                   alt="AV Communication team at work - event planning and execution"
                   className="w-full h-80 lg:h-96 object-cover transition-transform duration-500 hover:scale-105"
                 />

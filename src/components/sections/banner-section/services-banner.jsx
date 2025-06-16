@@ -1,14 +1,14 @@
 import React from "react";
 import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
-import BannerImage from "../../../assets/about-banner.png"; 
+// import BannerImage from "../../../assets/about-banner.png"; 
 
 const ServicesBanner = ({ title = "Services" }) => {
   return (
     <div
       className="relative w-full h-64 md:h-80 bg-center bg-cover flex items-center justify-center"
       style={{
-        backgroundImage: `url(${BannerImage})`,
+        backgroundImage: `url("/assets/about-banner.png)`,
       }}
     >
       {/* Dark overlay */}

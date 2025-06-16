@@ -52,7 +52,7 @@ const PartnersClientsSection = () => {
               <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-xl border border-gray-200 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg bg-white group-hover:border-gray-300 p-3 md:p-4">
                 {/* Actual Logo Image */}
                 <img
-                  src={`/src/assets/clients/${client.image}`}
+                  src={`/assets/clients/${client.image}`}
                   alt={client.name}
                   className="max-h-full max-w-full object-contain"
                 />

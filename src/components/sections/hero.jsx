@@ -8,7 +8,7 @@ const Banner = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('./src/assets/banner-1.png')`,
+          backgroundImage: `url('/assets/banner-1.png')`,
         }}
       >
         {/* Dark overlay for better text readability */}
