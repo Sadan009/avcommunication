@@ -23,22 +23,19 @@ const WhoWeAre = () => {
               <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
                 AV Communication
               </h3>
-              <p className="text-sm text-gray-600 mb-6 italic">
+              {/* <p className="text-sm text-gray-600 mb-6 italic">
                 (Rungreen Business Venture Pvt. Ltd.)
-              </p>
+              </p> */}
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                We are a dynamic and innovative agency specializing in event
-                branding, outdoor promotions, and integrated marketing
-                campaigns. From eye-catching road banners to immersive mall
-                activations and sports events, we craft experiences that
-                resonate and engage.
+               We help people, places, and business growstronger. At AV Communication we're inthe business of growth. 
+               Growing ourpartners'businesses, growing the placeswe touch, and growing our people.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Our mission is to promote well-being, brand visibility, and
-                social impact through memorable events, meaningful activations,
-                and strategic public outreach.
+               Our mission is rooted in TLC &ndash;  Technology, Location, and Creativity &ndash; to promote well-being,
+                brand visibility, and social impact through impactful events, strategic outreach, and meaningful,
+                 real-life audience engagement.
               </p>
             </div>
 

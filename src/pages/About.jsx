@@ -1,43 +1,44 @@
 import React from "react";
 import {
-  Building2,
-  Trophy,
-  Users,
-  Heart,
+  Building2 ,
+  Truck,
+  Cpu,
+  BarChart4,
   CheckCircle,
   ArrowRight,
 } from "lucide-react";
 import AboutBanner from "../components/sections/banner-section/about-banner";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const services = [
     {
       icon: Building2,
-      title: "Corporate Events & Activities",
+      title: "LED Billboards",
       description:
-        "We are experts in executing and organizing corporate events according to the needs of the company all across the country.",
+        "We offer high-resolution LED billboards at prime city locations, ensuring maximum visibility and engagement for your brand.",
       color: "from-blue-400 to-blue-600",
     },
     {
-      icon: Trophy,
-      title: "Sporting Activities & Events",
+      icon: Truck,
+      title: " LED Display Vans",
       description:
-        "We are executing various sports events like marathons, cycling events, adventure sports, and much more for various clients across India.",
-      color: "from-gray-700 to-black",
+        "Mobile LED vans that take your brand message directly to the streets — perfect for city-wide campaigns and event promotions.",
+      color: "from-yellow-600 to-yellow-400",
     },
     {
-      icon: Users,
-      title: "Outdoor Corporate Activities",
+      icon: Cpu,
+      title: " Programmatic Advertising",
       description:
-        "We organize outdoor activities for different clients all across the country like Employee Engagement activities, BTL campaigns, and brand activations.",
-      color: "from-blue-600 to-blue-400",
+        " Execute automated and data-driven advertising campaigns using real-time programmatic technology for better efficiency and precision.Engagement activities, BTL campaigns, and brand activations.",
+      color: "from-green-600 to-green-400",
     },
     {
-      icon: Heart,
-      title: "CSR Activities",
+      icon: BarChart4,
+      title: "Analytics & Attribution",
       description:
-        "We execute various CSR initiatives to promote meaningful causes, raise funds, and help the society and individuals associated with those causes.",
-      color: "from-black to-gray-800",
+        " Get detailed campaign insights — from footfall tracking to brand lift analysis — with our advanced measurement tools.",
+      color: "from-red-400 to-red-600",
     },
   ];
 
@@ -67,14 +68,17 @@ const About = () => {
 
             <div className="relative">
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-light">
-                Rungreen Business Venture Pvt. Ltd. is a dynamic and innovative
-                organization specializing in the design and execution of a wide
-                range of events and activities tailored to meet the needs of
-                corporate clients, sports enthusiasts, and communities.
-                Established with a mission to promote well-being, team spirit,
-                and social responsibility, Rungreen has become a trusted name in
-                organizing impactful events across various domains.
+                As one of Lucknow's most innovative media companies, we leverage the
+                power of creative excellence, unbeatable locations, and smart audience
+                data to change the game for advertisers. Our media powers brands to
+                break through, be relevant, and connect with audiences like never
+                before. AV Communication understands its role in driving cultural impact. 
+                Weare trusted by the millions who engage with our media every day,
+                drivinga strong relationship between brands and audiences. We are 
+                leading the industry, bringing intelligence to out of home
+                bydeploying digital at scale and embracing new technologies.
               </p>
+
 
               {/* Decorative line */}
               <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-600 rounded-full"></div>
@@ -149,22 +153,19 @@ const About = () => {
                 </h2>
 
                 <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 font-light">
-                  Rungreen aims to be a leader in the field of corporate and
-                  sports event management — continuously innovating to create
-                  experiences that inspire, engage, and make a positive impact.
-                  With a commitment to excellence and a passion for promoting
-                  health, wellness, and social responsibility, we are your go-to
-                  partner for memorable and impactful events.
+                  Our iron-clad commitment to deliverimpact where it matters. Our medianetwork leverages 
+                  the power of thelargest canvases across Lucknow to growbrands and businesses by driving
+                   impact,engagement, fame, and trust across every touchpoint
                 </p>
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="bg-blue-600 hover:bg-blue-400 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    Start Your Project
-                  </button>
-                  <button className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 border border-white/20">
+                  <Link to="/contact" className="bg-blue-600 hover:bg-blue-400 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Contact Us
+                  </Link>
+                  {/* <button className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 border border-white/20">
                     View Our Portfolio
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

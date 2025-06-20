@@ -4,16 +4,29 @@ import { CheckCircle } from "lucide-react";
 const PartnersClientsSection = () => {
   // Real client logos and filenames
   const clients = [
-    { name: "Apollo Tyres", image: "apollo.png" },
-    { name: "Dabur", image: "Dabur.png" },
-    { name: "Federal Bank", image: "FEDERAL.png" },
-    { name: "HCL", image: "HCL.png" },
-    { name: "HDFC", image: "HDFC.png" },
-    { name: "Indian Oil", image: "Indian-oil.png" },
-    { name: "Jagran", image: "Jagran.png" },
-    { name: "Reliance Power", image: "Reliance-Power.png" },
+    { name: "Anandi Water Park", image: "anandi.png" },
+    { name: "Tanishq", image: "Tanishq.png" },
+    { name: "Kalyan", image: "kalyan.png" },
+    { name: "Thumbs up", image: "thums-up.png" },
+    { name: "Godrej", image: "godrej.png" },
+    { name: "Eldeco", image: "eldeco.png" },
+    { name: "Aisshpra", image: "aishpra.jpg" },
+    { name: "HSJ", image: "HSJ.png" },
     { name: "SBI", image: "SBI.png" },
-    { name: "TATA", image: "TATA.png" },
+    { name: "Hazelnut", image: "Hazelnut.jpeg" },
+    { name: "CMS", image: "CMS.png" },
+    { name: "Blue world", image: "blue-world.png" },
+    { name: "JKCement", image: "jkcement.png" },
+    { name: "Jashn", image: "jashn.png" },
+    { name: "Kamla", image: "kamla.jpg" },
+    { name: "UP Suchana", image: "Suchana.jpg" },
+    { name: "UP", image: "up-govern.png" },
+    { name: "Police", image: "up-police.png" },
+    { name: "Mr Brown ", image: "mr-brown.png" },
+    { name: "Mohey", image: "mohey.png" },
+    { name: "LPS", image: "LPS.png" },
+    { name: "LULU", image: "LULU.png" },
+    { name: "Bhasin", image: "bhasin.png" },
   ];
 
   // Duplicate list for infinite scroll effect
@@ -59,9 +72,9 @@ const PartnersClientsSection = () => {
               </div>
 
               {/* Client Name */}
-              <p className="text-center mt-2 text-xs md:text-sm font-medium text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
+              {/* <p className="text-center mt-2 text-xs md:text-sm font-medium text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
                 {client.name}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>

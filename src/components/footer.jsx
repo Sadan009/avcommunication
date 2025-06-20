@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links Section */}
-          <div>
+          <div className="flex lg:flex-col items-center">
             <h4 className="text-xl font-semibold mb-6 text-white">
               Quick Links
             </h4>
@@ -110,10 +110,10 @@ const Footer = () => {
                 <div className="flex gap-2">
                   {/* <p className="text-gray-400 text-sm mb-1">Call Us</p> */}
                   <a
-                    href="tel:+911234567890"
+                    href="tel:+919559102222"
                     className="text-white hover:text-blue-400 transition-colors text-base"
                   >
-                    +91 123 456 7890
+                    +91-9559102222
                   </a>
                   
                 </div>
@@ -127,10 +127,10 @@ const Footer = () => {
                 <div>
                   {/* <p className="text-gray-400 text-sm mb-1">Email Us</p> */}
                   <a
-                    href="mailto:info@eventpro.com"
+                    href="mailto:info@avcommunication.co"
                     className="text-white hover:text-green-400 transition-colors text-base"
                   >
-                    info@eventpro.com
+                    info@avcommunication.co
                   </a>
                 </div>
               </div>
@@ -143,9 +143,9 @@ const Footer = () => {
                 <div>
                   {/* <p className="text-gray-400 text-sm mb-1">Visit Us</p> */}
                   <address className="text-white not-italic text-base leading-relaxed">
-                    123 Business District
+                    C-32, INDIRA NAGAR LUCKNOW- 226003CALL
                     
-                    Lucknow, UP 226001
+                    LUCKNOW- 226003
                     
                     India
                   </address>

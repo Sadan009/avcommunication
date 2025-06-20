@@ -86,22 +86,22 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      info: "+91 123 456 7890",
+      info: "+91-9559102222",
       subInfo: "Mon - Fri, 9AM - 6PM",
-      href: "tel:+911234567890",
+      href: "tel:+91-9559102222",
     },
     {
       icon: Mail,
       title: "Email Us",
-      info: "info@rungreen.com",
+      info: "info@avcommunication.co",
       subInfo: "We'll respond within 24hrs",
-      href: "mailto:info@rungreen.com",
+      href: "mailto:info@avcommunication.co",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      info: "123 Business District",
-      subInfo: "Lucknow, UP 226001",
+      info: "C-32, INDIRA NAGAR",
+      subInfo: "LUCKNOW- 226003",
       href: "#",
     },
   ];

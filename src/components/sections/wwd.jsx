@@ -1,11 +1,11 @@
 import React from "react";
 import {
   Building2,
-  TreePine,
-  Trophy,
-  Heart,
-  Rocket,
-  Camera,
+  Bus ,
+  Truck,
+  Clock ,
+  Cpu ,
+  BarChart4 ,
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
@@ -14,39 +14,39 @@ import { Link } from "react-router-dom";
 const ServicesOverview = () => {
   const services = [
     {
-      title: "Corporate Events",
-      description: "Conferences, retreats, and brand activations",
+      title: "LED Billboards",
+      description: "Dynamic ads placed at strategic high-traffic locations.",
       icon: Building2,
       color: "bg-blue-500",
     },
     {
-      title: "Outdoor Activities",
-      description: "Team-building, nature outings, and adventure events",
-      icon: TreePine,
+      title: "Digital Street Furniture",
+      description: "Interactive and location-based ad displays.",
+      icon: Bus ,
       color: "bg-green-500",
     },
     {
-      title: "Sporting Events",
-      description: "Marathons, cycling events, and fitness challenges",
-      icon: Trophy,
+      title: "LED Vans",
+      description: "Mobile LED display vehicles for city-wide brand exposure.",
+      icon: Truck,
       color: "bg-yellow-500",
     },
     {
-      title: "CSR Activities",
-      description: "Events for social causes and fundraisers",
-      icon: Heart,
+      title: "Contextual Campaigns",
+      description: "Content triggered by real-time factors like time, weather, location, or live events.",
+      icon: Clock ,
       color: "bg-red-500",
     },
     {
-      title: "Product Launches",
-      description: "Complete launch execution from press to activation",
-      icon: Rocket,
+      title: "Programmatic Advertising",
+      description: "Smart, data-driven campaign execution for speed and precision.",
+      icon: Cpu ,
       color: "bg-purple-500",
     },
     {
-      title: "Press Conferences",
-      description: "Professional press & media setup for corporate exposure",
-      icon: Camera,
+      title: "Brand Impact Measurement",
+      description: "Advanced attribution tools to track footfall, engagement, and brand lift.",
+      icon: BarChart4 ,
       color: "bg-indigo-500",
     },
   ];

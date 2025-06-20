@@ -1,56 +1,57 @@
 import React from "react";
 import {
   Building2,
-  Users,
-  Trophy,
-  HeartHandshake,
-  Globe2,
-  Briefcase,
-  Mountain,
+  Bus,
+  Truck,
+  Clock,
+  Cpu,
+  BarChart4,
+  ArrowRight,
+  CheckCircle,
 } from "lucide-react";
 import ServicesBanner from "../components/sections/banner-section/services-banner";
 
 const services = [
   {
-    title: "Corporate Events & Activities",
+    title: "LED Billboards",
     description:
-      "We organize custom corporate events such as press conferences, product launches, retreats, and team-building programs to enhance productivity and morale.",
+      "We offer high-resolution LED billboards at prime city locations, ensuring maximum visibility and engagement for your brand.",
     icon: Building2,
     color: "from-blue-500 to-blue-700",
   },
   {
-    title: "Outdoor Corporate Activities",
+    title: "Digital Street Furniture",
     description:
-      "We arrange outdoor events like adventure sports, team bonding experiences, and off-site ceremonies that rejuvenate corporate teams.",
-    icon: Mountain,
+      " Our smart displays on urban furniture like bus stops and poles offer highly localized, contextual advertising experiences.",
+    icon: Bus ,
     color: "from-gray-700 to-gray-900",
   },
   {
-    title: "Sporting Events",
+    title: "LED Vans",
     description:
-      "We manage marathons, cycling events, and recreational sports that promote fitness, engagement, and brand visibility across India.",
-    icon: Trophy,
+      "Mobile LED vans that take your brand message directly to the streets — perfect for city-wide campaigns and event promotions.",
+    icon: Truck ,
     color: "from-purple-600 to-purple-800",
   },
   {
-    title: "CSR Activities",
+    title: " Contextual Campaigns",
     description:
-      "We help clients execute impactful CSR events to support causes, raise funds, and connect with the community in meaningful ways.",
-    icon: HeartHandshake,
+      "Deliver real-time, relevant content triggered by weather, time, location, or live events like sports scores.",
+    icon: Clock ,
     color: "from-pink-600 to-red-700",
   },
   {
-    title: "Multi-City Activations",
+    title: " Programmatic Advertising",
     description:
-      "We execute large-scale campaigns across multiple cities for brand promotions, employee outreach, and product awareness.",
-    icon: Globe2,
+      "xecute automated and data-driven advertising campaigns using real-time programmatic technology for better efficiency and precision.",
+    icon:Cpu,
     color: "from-green-600 to-green-800",
   },
   {
-    title: "Employee Engagement",
+    title: "Analytics & Attribution",
     description:
-      "We deliver engaging in-office and off-site activities that build team spirit, boost retention, and create a positive workplace culture.",
-    icon: Users,
+      "Get detailed campaign insights — from footfall tracking to brand lift analysis — with our advanced measurement tools.",
+    icon: BarChart4,
     color: "from-yellow-500 to-yellow-700",
   },
 ];
