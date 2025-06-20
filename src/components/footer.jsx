@@ -41,7 +41,7 @@ const Footer = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">EventPro</h3>
+                  <h3 className="text-2xl font-bold text-white">AvCommunication</h3>
                   <p className="text-sm text-gray-400">Event Management</p>
                 </div>
               </div>
@@ -50,10 +50,11 @@ const Footer = () => {
             {/* About Company */}
             <div className="mb-8">
               <p className="text-gray-300 leading-relaxed mb-4">
-                We are a leading event management company specializing in
-                corporate events, team building activities, product launches,
-                and memorable experiences. With years of expertise, we deliver
-                exceptional events that exceed expectations.
+                Our media powers brands to break through, 
+                be relevant, and connect with audiences like never before. 
+                AV Communication understands its role in driving cultural impact. 
+                We are trusted by the millions who engage with our media every day, 
+                drivinga strong relationship between brands and audiences.
               </p>
              
             </div>

@@ -76,7 +76,7 @@ const About = () => {
                 Weare trusted by the millions who engage with our media every day,
                 drivinga strong relationship between brands and audiences. We are 
                 leading the industry, bringing intelligence to out of home
-                bydeploying digital at scale and embracing new technologies.
+                by deploying digital at scale and embracing new technologies.
               </p>
 
 
