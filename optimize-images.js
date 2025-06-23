@@ -13,7 +13,10 @@ if (!fs.existsSync(outputDir)) {
 }
 
 (async () => {
-  const filePaths = await glob(`${inputDir}/*.{jpg,jpeg,png}`);
+  const filePaths = await glob(
+    "public/assets/{gallery,clients,banner}/*.{jpg,jpeg,png}"
+  );
+
 
   const files = await imagemin(filePaths, {
     destination: outputDir,
