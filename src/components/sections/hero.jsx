@@ -1,15 +1,34 @@
 // Banner Component
-import React from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
+
+
 const Banner = () => {
+    const divRef = useRef(null);
+    const [loaded, setLoaded] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setLoaded(true);
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.1 }
+      );
+  
+      if (divRef.current) observer.observe(divRef.current);
+    }, []);
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background Image */}
       <div
+        ref={divRef}
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/assets/banner-1.png')`,
+          backgroundImage: loaded ? `url('/assets/banner-1.png')` : "none",
         }}
       >
         {/* Dark overlay for better text readability */}
