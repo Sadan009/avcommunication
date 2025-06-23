@@ -1,22 +1,59 @@
-import React, { useState } from 'react'
-import WorkBanner from '../components/sections/banner-section/work-banner'
+import React, { useState } from "react";
+import WorkBanner from "../components/sections/banner-section/work-banner";
 
 const Work = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   // Array of image URLs for the gallery
   const images = [
-    "https://images.unsplash.com/photo-1684513159158-5b23abff325e?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // roadside banner
-    "https://images.unsplash.com/photo-1653724618298-8838668f7d9f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // LED billboard at night
-    "https://images.unsplash.com/photo-1738573948473-c9f9141b09c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // urban billboard
-    "https://images.unsplash.com/photo-1650499616479-c13ceea331ce?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // building wall ad
-    "https://images.unsplash.com/photo-1706477003185-4160bd009a68?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // street poster
-    "https://images.unsplash.com/photo-1742715342270-79af495e9692?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // event banner outdoor
-    "https://images.unsplash.com/photo-1667150794375-bcbe9af19dea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // hoarding board
-    "https://images.unsplash.com/photo-1745725427532-4c52cdc6d4ae?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // advertisement board at highway
-    "https://images.unsplash.com/photo-1591622725460-6cc55d906f0d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // bus stop advertisement
-    "https://images.unsplash.com/photo-1655080745085-d38ef9c37051?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // busy street with banners
+    "/assets/gallery-optimized/1.jpg",
+    "/assets/gallery-optimized/2.jpg",
+    "/assets/gallery-optimized/3.jpg",
+    "/assets/gallery-optimized/4.jpg",
+    "/assets/gallery-optimized/5.jpg",
+    "/assets/gallery-optimized/6.jpg",
+    "/assets/gallery-optimized/7.jpg",
+    "/assets/gallery-optimized/8.jpg",
+    "/assets/gallery-optimized/9.jpg",
+    "/assets/gallery-optimized/10.jpg",
+    "/assets/gallery-optimized/11.jpg",
+    "/assets/gallery-optimized/13.jpg",
+    "/assets/gallery-optimized/14.jpg",
+    "/assets/gallery-optimized/15.jpg",
+    "/assets/gallery-optimized/16.jpg",
+    "/assets/gallery-optimized/17.jpg",
+    "/assets/gallery-optimized/18.jpg",
+    "/assets/gallery-optimized/20.jpg",
+    "/assets/gallery-optimized/21.jpg",
+    "/assets/gallery-optimized/22.jpg",
+    "/assets/gallery-optimized/23.jpg",
+    "/assets/gallery-optimized/24.jpg",
+    "/assets/gallery-optimized/25.jpg",
+    "/assets/gallery-optimized/26.jpg",
+    "/assets/gallery-optimized/27.jpg",
+    "/assets/gallery-optimized/28.jpg",
+    "/assets/gallery-optimized/29.jpg",
+    "/assets/gallery-optimized/30.jpg",
+    "/assets/gallery-optimized/31.jpg",
+    "/assets/gallery-optimized/32.jpg",
+    "/assets/gallery-optimized/33.jpg",
+    "/assets/gallery-optimized/34.jpg",
+    "/assets/gallery-optimized/35.jpg",
+    "/assets/gallery-optimized/36.jpg",
+    "/assets/gallery-optimized/37.jpg",
+    "/assets/gallery-optimized/38.jpg",
+    "/assets/gallery-optimized/39.jpg",
+    "/assets/gallery-optimized/40.jpg",
+    "/assets/gallery-optimized/41.jpg",
+    "/assets/gallery-optimized/42.jpg",
+    "/assets/gallery-optimized/43.jpg",
+    "/assets/gallery-optimized/44.jpg",
+    "/assets/gallery-optimized/45.jpg",
+    "/assets/gallery-optimized/46.jpg",
+    "/assets/gallery-optimized/47.jpg",
+    "/assets/gallery-optimized/48.jpg",
+    "/assets/gallery-optimized/49.jpg",
+    "/assets/gallery-optimized/50.jpg",
   ];
-
 
   return (
     <>
@@ -78,6 +115,6 @@ const Work = () => {
       </section>
     </>
   );
-}
+};
 
-export default Work
+export default Work;
