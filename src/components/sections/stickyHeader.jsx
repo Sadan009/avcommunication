@@ -46,8 +46,8 @@ const Navbar = () => {
               </div>
               {/* Logo Text */}
               <div className="text-gray-800">
-                <div className="text-xl lg:text-2xl font-light tracking-wider">
-                  ORIGINS
+                <div className="text-xl lg:text-2xl font-semibold font-mono tracking-wider">
+                  AVCommunication
                 </div>
               </div>
             </div>
