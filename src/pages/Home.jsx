@@ -3,7 +3,7 @@ import WhoWeAre from "../components/sections/whoWeAre";
 import ServicesOverview from "../components/sections/wwd";
 import TestimonialsSection from "../components/sections/testimonial";
 import PartnersClientsSection from "../components/sections/clients";
-import Maps from "../components/sections/maps";
+// import Maps from "../components/sections/maps";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <ServicesOverview />
       <TestimonialsSection />
       <PartnersClientsSection />
-      <Maps />
+      {/* <Maps /> */}
     </>
   );
 };
