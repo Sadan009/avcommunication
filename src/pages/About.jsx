@@ -108,7 +108,7 @@ const About = () => {
               return (
                 <div
                   key={index}
-                  className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
+                  className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-20 cursor-pointer "
                 >
                   <div className="flex items-start gap-6">
                     {/* Icon */}

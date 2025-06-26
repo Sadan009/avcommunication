@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   // Form for contact
@@ -29,41 +30,43 @@ const Contact = () => {
     e.preventDefault();
     const { name, mobile, email, message } = form;
 
-    if(name.trim() !== "" && mobile.trim() !== "" && email.trim() !== "" || message.trim() !== "") {
-
+    if (
+      (name.trim() !== "" && mobile.trim() !== "" && email.trim() !== "") ||
+      message.trim() !== ""
+    ) {
       const res = await fetch(
         "https://avcommunication-abd1c-default-rtdb.firebaseio.com/userDataRecords.json",
         {
           method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          mobile,
-          email,
-          message,
-          timestamp: new Date().toISOString(),
-        }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            mobile,
+            email,
+            message,
+            timestamp: new Date().toISOString(),
+          }),
+        }
+      );
+      if (res) {
+        toast.success("Message Sent Successfully!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setForm({ name: "", mobile: "", email: "", message: "" });
+        return;
+      } else {
+        alert("Failed to send message. Please try again later.");
       }
-    );
-    if (res) {
-      toast.success("Message Sent Successfully!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
-      setForm({ name: "", mobile: "", email: "", message: "" });
-      return;
     } else {
-      alert("Failed to send message. Please try again later.");
-      }
-    }else{
       toast.error("Please fill all the fields before submitting.", {
         position: "top-right",
         autoClose: 5000,
@@ -77,9 +80,8 @@ const Contact = () => {
       return;
     }
     // Add submission logic here (e.g., Firebase, email API, DB)
-    
-    setForm({ name: "", mobile: "", email: "", message: "" });
 
+    setForm({ name: "", mobile: "", email: "", message: "" });
   };
 
   const contactInfo = [
@@ -110,7 +112,10 @@ const Contact = () => {
     <>
       <ContactBanner />
 
-      <section className="bg-white min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+      <section
+        className="bg-white min-h-screen py-20 px-4 sm:px-6 lg:px-8"
+        id="contact-section"
+      >
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">
@@ -163,7 +168,7 @@ const Contact = () => {
                 </div>
 
                 {/* Business Hours */}
-                <div className="mt-12 pt-8 border-t border-gray-700">
+                {/* <div className="mt-12 pt-8 border-t border-gray-700">
                   <h4 className="font-semibold text-lg mb-4">Business Hours</h4>
                   <div className="space-y-2 text-gray-300">
                     <div className="flex justify-between">
@@ -179,7 +184,7 @@ const Contact = () => {
                       <span>Closed</span>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -297,12 +302,15 @@ const Contact = () => {
                 your vision come to life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-blue-600 hover:bg-blue-400 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <a
+                  href="#contact-section"
+                  className="bg-blue-600 hover:bg-blue-400 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
                   Schedule a Consultation
-                </button>
-                <button className="bg-white hover:bg-gray-50 text-blue-600 px-8 py-4 rounded-xl font-semibold transition-all duration-300 border-2 border-blue-600 hover:border-blue-400">
+                </a>
+                {/* <button className="bg-white hover:bg-gray-50 text-blue-600 px-8 py-4 rounded-xl font-semibold transition-all duration-300 border-2 border-blue-600 hover:border-blue-400">
                   View Our Portfolio
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
