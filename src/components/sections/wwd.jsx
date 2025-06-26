@@ -88,9 +88,9 @@ const ServicesOverview = () => {
               </p>
 
               {/* Hover Arrow */}
-              <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <ArrowRight className="w-5 h-5 text-gray-400" />
-              </div>
+              </div> */}
             </div>
           );
         })}
