@@ -23,28 +23,28 @@ const services = [
     title: "Digital Street Furniture",
     description:
       " Our smart displays on urban furniture like bus stops and poles offer highly localized, contextual advertising experiences.",
-    icon: Bus ,
+    icon: Bus,
     color: "from-gray-700 to-gray-900",
   },
   {
     title: "LED Vans",
     description:
       "Mobile LED vans that take your brand message directly to the streets — perfect for city-wide campaigns and event promotions.",
-    icon: Truck ,
+    icon: Truck,
     color: "from-purple-600 to-purple-800",
   },
   {
     title: " Contextual Campaigns",
     description:
       "Deliver real-time, relevant content triggered by weather, time, location, or live events like sports scores.",
-    icon: Clock ,
+    icon: Clock,
     color: "from-pink-600 to-red-700",
   },
   {
     title: " Programmatic Advertising",
     description:
       "xecute automated and data-driven advertising campaigns using real-time programmatic technology for better efficiency and precision.",
-    icon:Cpu,
+    icon: Cpu,
     color: "from-green-600 to-green-800",
   },
   {
@@ -59,7 +59,7 @@ const services = [
 const Services = () => {
   return (
     <>
-    <ServicesBanner />
+      <ServicesBanner />
       <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">

@@ -28,14 +28,17 @@ const WhoWeAre = () => {
               </p> */}
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-               We help people, places, and business growstronger. At AV Communication we're inthe business of growth. 
-               Growing ourpartners'businesses, growing the placeswe touch, and growing our people.
+                We help people, places, and business growstronger. At AV
+                Communication we're inthe business of growth. Growing
+                ourpartners'businesses, growing the placeswe touch, and growing
+                our people.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-               Our mission is rooted in TLC &ndash;  Technology, Location, and Creativity &ndash; to promote well-being,
-                brand visibility, and social impact through impactful events, strategic outreach, and meaningful,
-                 real-life audience engagement.
+                Our mission is rooted in TLC &ndash; Technology, Location, and
+                Creativity &ndash; to promote well-being, brand visibility, and
+                social impact through impactful events, strategic outreach, and
+                meaningful, real-life audience engagement.
               </p>
             </div>
 
@@ -88,7 +91,7 @@ const WhoWeAre = () => {
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/assets/hero-banner.png"
+                  src="/assets/gallery-optimized/5.jpg"
                   alt="AV Communication team at work - event planning and execution"
                   className="w-full h-80 lg:h-96 object-cover transition-transform duration-500 hover:scale-105"
                 />

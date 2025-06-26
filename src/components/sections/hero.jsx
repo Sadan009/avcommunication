@@ -28,7 +28,7 @@ const Banner = () => {
         ref={divRef}
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: loaded ? `url('/assets/banner-1.png')` : "none",
+          backgroundImage: loaded ? `url('/assets/gallery-optimized/22.jpg')` : "none",
         }}
       >
         {/* Dark overlay for better text readability */}
