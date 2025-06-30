@@ -1,5 +1,6 @@
 import { CheckCircle, Key } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WhoWeAre = () => {
   return (
@@ -66,7 +67,7 @@ const WhoWeAre = () => {
 
             {/* CTA Button */}
             <div>
-              <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <Link to="/about" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 Learn More
                 <svg
                   className="ml-2 w-5 h-5"
@@ -81,7 +82,7 @@ const WhoWeAre = () => {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
 

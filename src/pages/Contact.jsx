@@ -91,6 +91,7 @@ const Contact = () => {
       info: "+91-9559102222",
       subInfo: "Mon - Fri, 9AM - 6PM",
       href: "tel:+91-9559102222",
+      target: "#",
     },
     {
       icon: Mail,
@@ -98,13 +99,15 @@ const Contact = () => {
       info: "info@avcommunication.co",
       subInfo: "We'll respond within 24hrs",
       href: "mailto:info@avcommunication.co",
+      target: "#",
     },
     {
       icon: MapPin,
       title: "Visit Us",
       info: "C-32, INDIRA NAGAR",
       subInfo: "LUCKNOW- 226003",
-      href: "#",
+      href: "https://maps.app.goo.gl/b1gqbGoDTGeCK7NF9",
+      target: "_blank",
     },
   ];
 
@@ -154,6 +157,7 @@ const Contact = () => {
                           </h4>
                           <a
                             href={contact.href}
+                            target={contact.target}
                             className="text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium"
                           >
                             {contact.info}
@@ -246,7 +250,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent bg-white text-black transition-all duration-300"
-                      placeholder="your@email.com"
+                      placeholder="your@gmail.com"
                     />
                   </div>
 
