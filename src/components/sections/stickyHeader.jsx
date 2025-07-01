@@ -32,26 +32,22 @@ const Navbar = () => {
       <div className="h-1 bg-blue-500"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 lg:h-20">
+        <div className="flex justify-between items-center h-16 lg:h-24">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <div className="flex items-center space-x-3">
-              {/* Logo Icon */}
-              <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 lg:w-8 lg:h-8 border-2 border-gray-400 rounded-full relative">
-                  <div className="absolute inset-1 border border-gray-400 rounded-full">
-                    <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-80"></div>
-                  </div>
-                </div>
-              </div>
-              {/* Logo Text */}
-              <div className="text-gray-800">
-                <div className="text-xl lg:text-2xl font-semibold font-mono tracking-wider">
-                  AVCommunication
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className="flex items-center space-x-3">
+
+    {/* Logo Image */}
+    <div className="text-gray-800">
+      <img
+        src="/assets/Logo-2.png"
+        alt="AV Communication Logo"
+        className="h-14 lg:h-20 w-auto"
+      />
+    </div>
+  </div>
+</div>
+
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-end space-x-8">

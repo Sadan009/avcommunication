@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Building2 ,
+  Building2,
   Truck,
   Cpu,
   BarChart4,
@@ -68,17 +68,17 @@ const About = () => {
 
             <div className="relative">
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-light">
-                As one of Lucknow's most innovative media companies, we leverage the
-                power of creative excellence, unbeatable locations, and smart audience
-                data to change the game for advertisers. Our media powers brands to
-                break through, be relevant, and connect with audiences like never
-                before. AV Communication understands its role in driving cultural impact. 
-                Weare trusted by the millions who engage with our media every day,
-                drivinga strong relationship between brands and audiences. We are 
-                leading the industry, bringing intelligence to out of home
-                by deploying digital at scale and embracing new technologies.
+                As one of Lucknow's most innovative media companies, we leverage
+                the power of creative excellence, unbeatable locations, and
+                smart audience data to change the game for advertisers. Our
+                media powers brands to break through, be relevant, and connect
+                with audiences like never before. AV Communication understands
+                its role in driving cultural impact. Weare trusted by the
+                millions who engage with our media every day, drivinga strong
+                relationship between brands and audiences. We are leading the
+                industry, bringing intelligence to out of home by deploying
+                digital at scale and embracing new technologies.
               </p>
-
 
               {/* Decorative line */}
               <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-600 rounded-full"></div>
@@ -86,10 +86,10 @@ const About = () => {
           </div>
 
           {/* Achievements Section */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-20 max-w-4xl mx-auto px-4">
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center">
-                <div className="bg-blue-50 rounded-2xl p-6 mb-4 border border-blue-100 lg:w-[210px] lg:h-[140px] w-[170px] h-[140px]">
+                <div className="bg-blue-50 rounded-2xl p-6 mb-4 border border-blue-100 w-full h-[140px]">
                   <div className="w-12 h-12 bg-blue-600 rounded-xl mx-auto mb-3 flex items-center justify-center">
                     <CheckCircle className="w-6 h-6 text-white" />
                   </div>
@@ -153,14 +153,18 @@ const About = () => {
                 </h2>
 
                 <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 font-light">
-                  Our iron-clad commitment to deliverimpact where it matters. Our medianetwork leverages 
-                  the power of thelargest canvases across Lucknow to growbrands and businesses by driving
-                   impact,engagement, fame, and trust across every touchpoint
+                  Our iron-clad commitment to deliverimpact where it matters.
+                  Our medianetwork leverages the power of thelargest canvases
+                  across Lucknow to growbrands and businesses by driving
+                  impact,engagement, fame, and trust across every touchpoint
                 </p>
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link to="/contact" className="bg-blue-600 hover:bg-blue-400 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                  <Link
+                    to="/contact"
+                    className="bg-blue-600 hover:bg-blue-400 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
                     Contact Us
                   </Link>
                   {/* <button className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 border border-white/20">

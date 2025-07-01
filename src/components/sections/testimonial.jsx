@@ -134,21 +134,44 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
-          aria-label="Previous testimonial"
-        >
-          <ChevronLeft className="w-6 h-6 text-gray-600" />
-        </button>
+        {/* Navigation Arrows */}
+{/* Desktop Arrows (Side Center) */}
+<div className="hidden md:block">
+  <button
+    onClick={prevSlide}
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
+    aria-label="Previous testimonial"
+  >
+    <ChevronLeft className="w-6 h-6 text-gray-600" />
+  </button>
 
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
-          aria-label="Next testimonial"
-        >
-          <ChevronRight className="w-6 h-6 text-gray-600" />
-        </button>
+  <button
+    onClick={nextSlide}
+    className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
+    aria-label="Next testimonial"
+  >
+    <ChevronRight className="w-6 h-6 text-gray-600" />
+  </button>
+</div>
+
+{/* Mobile Arrows (Below Card Centered) */}
+<div className="flex justify-center gap-6 mt-6 md:hidden">
+  <button
+    onClick={prevSlide}
+    className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition-colors duration-200"
+    aria-label="Previous testimonial"
+  >
+    <ChevronLeft className="w-5 h-5 text-gray-600" />
+  </button>
+
+  <button
+    onClick={nextSlide}
+    className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition-colors duration-200"
+    aria-label="Next testimonial"
+  >
+    <ChevronRight className="w-5 h-5 text-gray-600" />
+  </button>
+</div>
       </div>
 
       {/* Slide Indicators */}

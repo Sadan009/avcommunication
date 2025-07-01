@@ -66,7 +66,7 @@ const WhoWeAre = () => {
             </div>
 
             {/* CTA Button */}
-            <div>
+            <div className="flex justify-center lg:justify-start md:justify-start">
               <Link to="/about" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 Learn More
                 <svg

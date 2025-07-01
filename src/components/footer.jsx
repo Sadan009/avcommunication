@@ -34,15 +34,13 @@ const Footer = () => {
             {/* Logo */}
             <div className="mb-6">
               <div className="flex items-center gap-3">
-                {/* Dummy Logo */}
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                  </svg>
-                </div>
+                {/* Logo Image */}
                 <div>
-                  <h3 className="text-2xl font-bold text-white">AvCommunication</h3>
-                  <p className="text-sm text-gray-400">Event Management</p>
+                  <img
+                    src="/assets/Logo-2.png"
+                    alt="AV Communication Logo"
+                    className="h-24 w-auto"
+                  />
                 </div>
               </div>
             </div>
@@ -50,13 +48,12 @@ const Footer = () => {
             {/* About Company */}
             <div className="mb-8">
               <p className="text-gray-300 leading-relaxed mb-4">
-                Our media powers brands to break through, 
-                be relevant, and connect with audiences like never before. 
-                AV Communication understands its role in driving cultural impact. 
-                We are trusted by the millions who engage with our media every day, 
-                drivinga strong relationship between brands and audiences.
+                Our media powers brands to break through, be relevant, and
+                connect with audiences like never before. AV Communication
+                understands its role in driving cultural impact. We are trusted
+                by the millions who engage with our media every day, drivinga
+                strong relationship between brands and audiences.
               </p>
-             
             </div>
 
             {/* Social Links */}
@@ -80,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links Section */}
-          <div className="flex lg:flex-col items-center">
+          <div className="flex flex-col lg:items-center">
             <h4 className="text-xl font-semibold mb-6 text-white">
               Quick Links
             </h4>
@@ -116,7 +113,6 @@ const Footer = () => {
                   >
                     +91-9559102222
                   </a>
-                  
                 </div>
               </div>
 
@@ -144,11 +140,7 @@ const Footer = () => {
                 <div>
                   {/* <p className="text-gray-400 text-sm mb-1">Visit Us</p> */}
                   <address className="text-white not-italic text-base leading-relaxed">
-                    C-32, INDIRA NAGAR LUCKNOW- 226003CALL
-                    
-                    LUCKNOW- 226003
-                    
-                    India
+                    C-32, INDIRA NAGAR LUCKNOW- 226003CALL LUCKNOW- 226003 India
                   </address>
                 </div>
               </div>
