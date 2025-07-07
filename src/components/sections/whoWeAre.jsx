@@ -29,9 +29,9 @@ const WhoWeAre = () => {
               </p> */}
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                We help people, places, and business growstronger. At AV
-                Communication we're inthe business of growth. Growing
-                ourpartners'businesses, growing the placeswe touch, and growing
+                We help people, places, and business grow stronger. At AV
+                Communication we're in the business of growth. Growing
+                our partners businesses, growing the places we touch, and growing
                 our people.
               </p>
 
@@ -121,7 +121,7 @@ const WhoWeAre = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">
-                      5+ years of Experience
+                      10+ years of Experience
                     </div>
                     <div className="text-sm text-gray-600">
                       Unmatched Advertising Solutions

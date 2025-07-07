@@ -51,7 +51,7 @@ const Footer = () => {
                 Our media powers brands to break through, be relevant, and
                 connect with audiences like never before. AV Communication
                 understands its role in driving cultural impact. We are trusted
-                by the millions who engage with our media every day, drivinga
+                by the millions who engage with our media every day, driving a
                 strong relationship between brands and audiences.
               </p>
             </div>
