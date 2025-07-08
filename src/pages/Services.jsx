@@ -1,13 +1,11 @@
 import React from "react";
 import {
   Building2,
-  Bus,
   Truck,
-  Clock,
   Cpu,
   BarChart4,
-  ArrowRight,
-  CheckCircle,
+  TimerReset,
+  MapPin,
 } from "lucide-react";
 import ServicesBanner from "../components/sections/banner-section/services-banner";
 
@@ -20,10 +18,10 @@ const services = [
     color: "from-blue-500 to-blue-700",
   },
   {
-    title: "Digital Street Furniture",
+    title: "Dynamic Content Delivery",
     description:
-      " Our smart displays on urban furniture like bus stops and poles offer highly localized, contextual advertising experiences.",
-    icon: Bus,
+      " Real-time content updates triggered by weather, time, location, or local events like sports.",
+    icon: TimerReset,
     color: "from-gray-700 to-gray-900",
   },
   {
@@ -34,16 +32,16 @@ const services = [
     color: "from-purple-600 to-purple-800",
   },
   {
-    title: " Contextual Campaigns",
+    title: "Media Inventory Access",
     description:
-      "Deliver real-time, relevant content triggered by weather, time, location, or live events like sports scores.",
-    icon: Clock,
+      "Choose from a wide network of premium LED locations across Lucknow — including high-traffic areas like Phoenix Mall, Hazratganj, and Airport Road.",
+    icon: MapPin,
     color: "from-pink-600 to-red-700",
   },
   {
     title: " Programmatic Advertising",
     description:
-      "xecute automated and data-driven advertising campaigns using real-time programmatic technology for better efficiency and precision.",
+      "execute automated and data-driven advertising campaigns using real-time programmatic technology for better efficiency and precision.",
     icon: Cpu,
     color: "from-green-600 to-green-800",
   },
@@ -66,8 +64,9 @@ const Services = () => {
             Our Services
           </h2>
           <p className="text-gray-600 text-lg">
-            We deliver customized events across corporate, sporting, and CSR
-            domains nationwide.
+            We deliver high-impact digital advertising experiences across
+            Lucknow through LED billboards, mobile LED vans, and dynamic content
+            campaigns—powered by data, creativity, and premium locations.
           </p>
         </div>
 

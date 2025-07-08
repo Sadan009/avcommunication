@@ -153,10 +153,11 @@ const About = () => {
                 </h2>
 
                 <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 font-light">
-                  Our iron-clad commitment to deliverimpact where it matters.
-                  Our medianetwork leverages the power of thelargest canvases
-                  across Lucknow to growbrands and businesses by driving
-                  impact,engagement, fame, and trust across every touchpoint
+                  Our steadfast commitment is to deliver impactful results where
+                  it matters. Our media network harnesses the power of the
+                  largest platforms across Lucknow to elevate brands and
+                  businesses by driving engagement, fame, and trust at every
+                  touchpoint.
                 </p>
 
                 {/* CTA Buttons */}
