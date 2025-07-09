@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WorkBanner from "../components/sections/banner-section/work-banner";
+import PartnersClientsSection from "../components/sections/clients";
 
 const Work = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -113,6 +114,7 @@ const Work = () => {
           </div>
         )}
       </section>
+      <PartnersClientsSection />
     </>
   );
 };
