@@ -29,7 +29,7 @@ const Dashboard = () => {
 
     return () => unsubscribe();
   }, [navigate]);
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="min-h-screen bg-gray-100 px-4 py-8">

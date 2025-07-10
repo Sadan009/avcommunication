@@ -7,10 +7,12 @@ import Contact from "./pages/Contact";
 import MainLayout from "./components/layout/Layout";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="/" element={<Home />} />
